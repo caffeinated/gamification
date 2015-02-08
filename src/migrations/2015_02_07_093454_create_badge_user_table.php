@@ -18,6 +18,7 @@ class CreateBadgeUserTable extends Migration
 			$table->foreign('badge_id')->references('id')->on('badges')->onDelete('cascade');
 			$table->integer('user_id')->unsigned()->index();
 			$table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+			$table->integer('points')->default(1);
 			$table->timestamps();
 		});
 	}

@@ -27,6 +27,6 @@ class Badge extends Model
 	 */
 	public function users()
 	{
-		return $this->belongsToMany(Config::get('auth.model'))->withTimestamps();
+		return $this->belongsToMany(Config::get('auth.model'))->withPivot('points')->withTimestamps();
 	}
 }

@@ -20,7 +20,7 @@ trait GamificationTrait
 	 */
 	public function badges()
 	{
-		return $this->belongsToMany('Caffeinated\Gamification\Models\Badge')->withTimestamps();
+		return $this->belongsToMany('Caffeinated\Gamification\Models\Badge')->withPivot('points')->withTimestamps();
 	}
 
 	/**
