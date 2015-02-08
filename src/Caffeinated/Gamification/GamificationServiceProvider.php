@@ -20,7 +20,7 @@ class GamificationServiceProvider extends ServiceProvider
 	public function boot()
 	{
 		$this->publishes([
-			__DIR__.'/../../config' => config_path('gamification.php')
+			__DIR__.'/../../config' => config_path()
 		], 'config');
 
 		$this->publishes([
