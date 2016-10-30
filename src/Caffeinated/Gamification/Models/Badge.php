@@ -20,6 +20,10 @@ class Badge extends Model
 	 */
 	protected $table = 'badges';
 
+	public function byName($badge)
+	{
+		return $this->where('name', $badge)->first();
+	}
 	/**
 	 * Badges can belong to many users.
 	 *
