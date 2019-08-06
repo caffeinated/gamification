@@ -1,3 +1,5 @@
+# This package has been abandoned and is no longer maintained.
+
 Caffeinated Gamification
 ========================
 Caffeinated Gamification aims to be a light-weight and easy to use gamification package to implement within your Laravel 5.0 application.
